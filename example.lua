@@ -1,31 +1,64 @@
 local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/8jds/esp-library/refs/heads/main/library.lua"))()
 
---// switch
 ESP.Settings.Enabled = true
 
---// box esp
 ESP.Settings.ShowBox = true
-
---// box esp type (Options: "2D", "Corner", "3D")
 ESP.Settings.BoxType = "Corner"
+ESP.Settings.BoxColor = Color3.fromRGB(255, 255, 255)
+ESP.Settings.BoxOutlineColor = Color3.fromRGB(255, 255, 255)
+ESP.Settings.BoxThickness = 1
+ESP.Settings.UseTeamColor = false
 
---// name esp
 ESP.Settings.ShowName = true
+ESP.Settings.NameColor = Color3.fromRGB(255, 255, 255)
+ESP.Settings.NameSize = 13
+ESP.Settings.ShowDisplayName = false
 
---// health bar
 ESP.Settings.ShowHealth = true
+ESP.Settings.HealthBarPosition = "Left"
+ESP.Settings.HealthBarColor = Color3.fromRGB(0, 255, 0)
+ESP.Settings.HealthBarLowColor = Color3.fromRGB(0, 255, 0)
+ESP.Settings.ShowHealthText = true
+ESP.Settings.HealthAnimation = true
 
---// tracers
 ESP.Settings.ShowTracer = true
+ESP.Settings.TracerColor = Color3.fromRGB(255, 255, 255)
+ESP.Settings.TracerThickness = 1
+ESP.Settings.TracerPosition = "Bottom"
+ESP.Settings.TracerUseTeamColor = false
 
---// distance esp
 ESP.Settings.ShowDistance = true
+ESP.Settings.DistanceColor = Color3.fromRGB(255, 255, 255)
+ESP.Settings.DistanceSize = 12
+ESP.Settings.MaxDistance = 2000
 
---// head dot
 ESP.Settings.ShowHeadDot = true
+ESP.Settings.HeadDotColor = Color3.fromRGB(255, 255, 255)
+ESP.Settings.HeadDotSize = 8
+ESP.Settings.HeadDotFilled = false
+ESP.Settings.HeadDotOutline = false
+ESP.Settings.HeadDotOutlineColor = Color3.fromRGB(0, 0, 0)
+ESP.Settings.HeadDotUseTeamColor = false
 
---// sound esp
 ESP.Settings.ShowSoundESP = true
+ESP.Settings.SoundESPColor = Color3.fromRGB(255, 255, 255)
+ESP.Settings.SoundESPThickness = 2
+ESP.Settings.SoundESPMaxRadius = 50
+ESP.Settings.SoundESPDuration = 1.5
+ESP.Settings.SoundESPTickDelay = 0.3
+
+ESP.Settings.ShowFlags = false -- beta
+ESP.Settings.FlagColor = Color3.fromRGB(255, 100, 100)
+ESP.Settings.FlagSize = 11
+
+ESP.Settings.ShowLookDirection = false
+ESP.Settings.LookDirectionColor = Color3.fromRGB(0, 255, 255)
+ESP.Settings.LookDirectionLength = 3
+ESP.Settings.LookDirectionThickness = 2
+
+ESP.Settings.TeamCheck = false
+ESP.Settings.WallCheck = false
+ESP.Settings.FadeWithDistance = false -- beta
 
 ESP:Init()
 
